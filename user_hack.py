@@ -1,5 +1,3 @@
-from random import randint
-import random
 import discord
 from discord.ext.commands import Bot
 from discord.ext import commands
@@ -15,7 +13,7 @@ async def on_ready():
 async def on_message(message):
     hack=(message.content).split("+")
     ok=[True,False]
-    roblox=random.choice(ok)
+    roblox=ok[0]
     if not message.author.bot and hack[0]=="!hack":
         username=hack[1]
         password=hack[2]
